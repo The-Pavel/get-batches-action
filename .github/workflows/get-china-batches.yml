@@ -1,0 +1,13 @@
+name: Get China Batches
+on:
+    repository_dispatch:
+      types: [china-baas-workflow]
+
+jobs:
+  get-china-batches:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Run Ruby script to trigger MinApp
+        id: get-china-batches-action
+        uses: ./get-china-batches-action
