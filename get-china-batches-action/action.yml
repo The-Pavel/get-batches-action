@@ -1,5 +1,5 @@
 name: "Fetch latest China batches"
 description: "Triggered when there's any changes in China batches, to update the Courses WeChat Mini Program BaaS"
-  runs:
-    using: 'docker'
-    image: 'Dockerfile'
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
